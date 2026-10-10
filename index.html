@@ -1,0 +1,158 @@
+<!doctype html>
+<html lang="sv">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Grova Tag – Rivning, håltagning & bygg i Östersund</title>
+<meta name="description" content="Grova Tag utför rivning, håltagning, bygg, renovering och betongjobb i Östersund och hela Jämtland.">
+<meta name="theme-color" content="#f5f5f7" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#111113" media="(prefers-color-scheme: dark)">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<script>document.body.classList.add('js')</script>
+
+<nav>
+  <div class="wrap">
+    <a class="logo" href="index.html">Grova<span>Tag</span></a>
+    <ul>
+      <li class="wide"><a href="index.html#tjanster">Tjänster</a></li>
+      <li><a href="index.html#galleri">Galleri</a></li>
+      <li><a href="nyheter.html">Nyheter</a></li>
+      <li><a class="btn" href="kontakt.html">Kontakt</a></li>
+    </ul>
+  </div>
+</nav>
+
+<main>
+  <section class="hero">
+    <div class="wrap reveal">
+      <p class="eyebrow">Östersund · Jämtland</p>
+      <h1>Tunga jobb.<br><span>Rätt gjorda.</span></h1>
+      <p class="lead">Rivning, håltagning, bygg, renovering och betongarbeten – vi tar oss an de grova tagen så att du slipper.</p>
+      <div class="actions">
+        <a class="btn" href="kontakt.html">Begär offert</a>
+        <a class="btn ghost" href="#galleri">Se våra jobb ›</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="tjanster">
+    <div class="wrap">
+      <div class="head reveal">
+        <p class="eyebrow">Tjänster</p>
+        <h2>Från första slag<br>till sista finish.</h2>
+      </div>
+      <div class="grid">
+        <article class="card reveal">
+          <span class="num">01</span>
+          <h3>Rivning</h3>
+          <p>Invändig och utvändig rivning – från enstaka väggar till hela rum. Vi river säkert, sorterar och lämnar rent efter oss.</p>
+        </article>
+        <article class="card reveal">
+          <span class="num">02</span>
+          <h3>Håltagning</h3>
+          <p>Kärnborrning och sågning i betong och murverk för dörrar, fönster, ventilation och rördragning.</p>
+        </article>
+        <article class="card reveal">
+          <span class="num">03</span>
+          <h3>Bygg</h3>
+          <p>Tillbyggnader, altaner, förråd och stommar. Stabilt hantverk som håller i jämtländskt klimat.</p>
+        </article>
+        <article class="card reveal">
+          <span class="num">04</span>
+          <h3>Renovering</h3>
+          <p>Kök, badrum och hela bostäder. Vi tar projektet från rivning till färdigt resultat.</p>
+        </article>
+        <article class="card reveal">
+          <span class="num">05</span>
+          <h3>Betongjobb</h3>
+          <p>Gjutning av plattor, grunder, trappor och golv – samt bilning och reparation av befintlig betong.</p>
+        </article>
+        <article class="card reveal">
+          <span class="num">06</span>
+          <h3>Annat som behöver göras</h3>
+          <p>Har du ett jobb som inte passar in i en ruta? Hör av dig – finns det ett grovt tag att ta, tar vi det.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section id="galleri">
+    <div class="wrap">
+      <div class="head reveal">
+        <p class="eyebrow">Galleri</p>
+        <h2>Tidigare jobb.</h2>
+        <p class="lead">Ett urval av uppdrag vi gjort runt om i Jämtland.</p>
+      </div>
+
+      <div class="filters reveal" role="group" aria-label="Filtrera efter kategori">
+        <button type="button" data-cat="alla" aria-pressed="true">Alla</button>
+        <button type="button" data-cat="rivning" aria-pressed="false">Rivning</button>
+        <button type="button" data-cat="haltagning" aria-pressed="false">Håltagning</button>
+        <button type="button" data-cat="bygg" aria-pressed="false">Bygg</button>
+        <button type="button" data-cat="renovering" aria-pressed="false">Renovering</button>
+        <button type="button" data-cat="betong" aria-pressed="false">Betong</button>
+        <button type="button" data-cat="ovrigt" aria-pressed="false">Övrigt</button>
+      </div>
+
+      <!--
+        Lägg bilder i mappen "bilder/" med namnen nedan (eller ändra src).
+        Nytt jobb: kopiera en <figure>, sätt data-cat till en av kategorierna ovan.
+        Saknas bilden visas en randig platshållare.
+      -->
+      <div class="gallery reveal">
+        <figure data-cat="rivning"><img src="bilder/rivning-1.jpg" alt="Köksrivning" loading="lazy" onerror="this.remove()"><figcaption><small>Rivning</small>Köksrivning</figcaption></figure>
+        <figure data-cat="rivning"><img src="bilder/rivning-2.jpg" alt="Rivning av innervägg" loading="lazy" onerror="this.remove()"><figcaption><small>Rivning</small>Rivning av innervägg</figcaption></figure>
+        <figure data-cat="haltagning"><img src="bilder/haltagning-1.jpg" alt="Dörröppning i betongvägg" loading="lazy" onerror="this.remove()"><figcaption><small>Håltagning</small>Dörröppning i betongvägg</figcaption></figure>
+        <figure data-cat="haltagning"><img src="bilder/haltagning-2.jpg" alt="Kärnborrning för ventilation" loading="lazy" onerror="this.remove()"><figcaption><small>Håltagning</small>Kärnborrning för ventilation</figcaption></figure>
+        <figure data-cat="bygg"><img src="bilder/bygg-1.jpg" alt="Altanbygge" loading="lazy" onerror="this.remove()"><figcaption><small>Bygg</small>Altanbygge</figcaption></figure>
+        <figure data-cat="bygg"><img src="bilder/bygg-2.jpg" alt="Förråd" loading="lazy" onerror="this.remove()"><figcaption><small>Bygg</small>Förråd</figcaption></figure>
+        <figure data-cat="renovering"><img src="bilder/renovering-1.jpg" alt="Badrumsrenovering" loading="lazy" onerror="this.remove()"><figcaption><small>Renovering</small>Badrumsrenovering</figcaption></figure>
+        <figure data-cat="renovering"><img src="bilder/renovering-2.jpg" alt="Nytt kök" loading="lazy" onerror="this.remove()"><figcaption><small>Renovering</small>Nytt kök</figcaption></figure>
+        <figure data-cat="betong"><img src="bilder/betong-1.jpg" alt="Gjuten platta" loading="lazy" onerror="this.remove()"><figcaption><small>Betong</small>Gjuten platta</figcaption></figure>
+        <figure data-cat="betong"><img src="bilder/betong-2.jpg" alt="Betongtrappa" loading="lazy" onerror="this.remove()"><figcaption><small>Betong</small>Betongtrappa</figcaption></figure>
+        <figure data-cat="ovrigt"><img src="bilder/ovrigt-1.jpg" alt="Markarbete" loading="lazy" onerror="this.remove()"><figcaption><small>Övrigt</small>Markarbete</figcaption></figure>
+        <figure data-cat="ovrigt"><img src="bilder/ovrigt-2.jpg" alt="Bortforsling" loading="lazy" onerror="this.remove()"><figcaption><small>Övrigt</small>Bortforsling</figcaption></figure>
+      </div>
+    </div>
+  </section>
+
+  <section class="about" id="om">
+    <div class="wrap">
+      <div class="reveal">
+        <p class="eyebrow">Om Grova Tag</p>
+        <h2>Lokalt. Pålitligt. Rejält.</h2>
+        <p class="lead" style="margin-top:1rem">Vi är ett lokalt företag i Östersund som utför allt från tunga rivningsjobb till noggranna renoveringar. Raka besked, schyssta priser och jobb som blir gjorda ordentligt – första gången.</p>
+      </div>
+      <div class="facts reveal">
+        <div><strong>Östersund</strong><span>Bas för alla uppdrag</span></div>
+        <div><strong>Jämtland</strong><span>Vi kör i hela länet</span></div>
+        <div><strong>Privat</strong><span>Villor, lägenheter, fritidshus</span></div>
+        <div><strong>Företag</strong><span>Lokaler och fastigheter</span></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="cta">
+    <div class="wrap reveal">
+      <p class="eyebrow">Kontakt</p>
+      <h2>Berätta om ditt jobb.</h2>
+      <p class="lead">Hör av dig så återkommer vi med en kostnadsfri offert.</p>
+      <a class="btn" href="kontakt.html">Kontakta oss</a>
+    </div>
+  </section>
+</main>
+
+<dialog class="lightbox" aria-label="Förstorad bild"><img src="" alt=""></dialog>
+
+<footer>
+  <div class="wrap">
+    <span>© <span id="year">2026</span> Grova Tag</span>
+    <span>Östersund, Jämtland</span>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

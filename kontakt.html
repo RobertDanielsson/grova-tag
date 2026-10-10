@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="sv">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Kontakt – Grova Tag</title>
+<meta name="description" content="Kontakta Grova Tag i Östersund för en kostnadsfri offert på rivning, håltagning, bygg, renovering och betongjobb.">
+<meta name="theme-color" content="#f5f5f7" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#111113" media="(prefers-color-scheme: dark)">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<script>document.body.classList.add('js')</script>
+
+<nav>
+  <div class="wrap">
+    <a class="logo" href="index.html">Grova<span>Tag</span></a>
+    <ul>
+      <li class="wide"><a href="index.html#tjanster">Tjänster</a></li>
+      <li><a href="index.html#galleri">Galleri</a></li>
+      <li><a href="nyheter.html">Nyheter</a></li>
+      <li><a class="btn" href="kontakt.html" aria-current="page">Kontakt</a></li>
+    </ul>
+  </div>
+</nav>
+
+<main>
+  <section class="page-head">
+    <div class="wrap reveal">
+      <p class="eyebrow">Kontakt</p>
+      <h1>Berätta om ditt jobb.</h1>
+      <p class="lead">Ring, mejla eller fyll i formuläret så återkommer vi med en kostnadsfri offert.</p>
+    </div>
+  </section>
+
+  <section>
+    <div class="wrap contact-grid">
+      <!-- TODO: byt till riktigt nummer och mejl (även data-to på formuläret) -->
+      <div class="contact-info reveal">
+        <a href="tel:+46700000000"><small>Ring</small><b>070-000 00 00</b></a>
+        <a href="mailto:info@grovatag.se"><small>Mejla</small><b>info@grovatag.se</b></a>
+        <div><small>Område</small><b>Östersund &amp; hela Jämtland</b></div>
+      </div>
+
+      <form id="offert" class="reveal" data-to="info@grovatag.se">
+        <div class="form-row">
+          <label>Namn<input name="namn" autocomplete="name" required></label>
+          <label>Telefon<input name="telefon" type="tel" autocomplete="tel" required></label>
+        </div>
+        <div class="form-row">
+          <label>Ort<input name="ort" autocomplete="address-level2" placeholder="t.ex. Östersund"></label>
+          <label>Typ av jobb
+            <select name="jobb">
+              <option>Rivning</option>
+              <option>Håltagning</option>
+              <option>Bygg</option>
+              <option>Renovering</option>
+              <option>Betongjobb</option>
+              <option>Annat</option>
+            </select>
+          </label>
+        </div>
+        <label>Beskriv jobbet<textarea name="meddelande" required placeholder="Vad ska göras, ungefärlig storlek, när det behöver vara klart…"></textarea></label>
+        <button class="btn" type="submit">Skicka förfrågan</button>
+        <p class="note">Formuläret öppnar din mejlapp med meddelandet ifyllt.</p>
+      </form>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <span>© <span id="year">2026</span> Grova Tag</span>
+    <span>Östersund, Jämtland</span>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
