@@ -1,5 +1,8 @@
 document.getElementById('year').textContent = new Date().getFullYear();
 
+// Respect reduced motion: no looping hero footage
+if (matchMedia('(prefers-reduced-motion: reduce)').matches) { const v = document.querySelector('.hero-media'); v?.removeAttribute('autoplay'); v?.pause(); }
+
 // Fade sections in as they scroll into view
 const io = new IntersectionObserver((entries) => {
   for (const e of entries) if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); }
