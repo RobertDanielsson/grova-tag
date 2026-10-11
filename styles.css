@@ -84,6 +84,7 @@ section { padding-block: clamp(4.5rem, 10vw, 8rem); }
   }
   .hero:has(.hero-media) .hero-media {
     display: block; position: absolute; inset: 0 0 0 auto; width: 65%; height: 100%; object-fit: cover;
+    filter: brightness(0.65) saturate(0.85) contrast(1.05);  /* tona ner ljust klipp mot det mörka bandet */
     mask-image: linear-gradient(to right, transparent, #000 45%);
     -webkit-mask-image: linear-gradient(to right, transparent, #000 45%);
   }
