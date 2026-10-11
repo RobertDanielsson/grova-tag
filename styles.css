@@ -83,12 +83,17 @@ section { padding-block: clamp(4.5rem, 10vw, 8rem); }
     --text: #ffffff; --muted: #c4c4c4; --accent-ink: #f08a4b; color: var(--text);
   }
   .hero:has(.hero-media) .hero-media {
-    display: block; position: absolute; inset: 0 0 0 auto; width: 65%; height: 100%; object-fit: cover;
-    filter: brightness(0.65) saturate(0.85) contrast(1.05);  /* tona ner ljust klipp mot det mörka bandet */
-    mask-image: linear-gradient(to right, transparent, #000 45%);
-    -webkit-mask-image: linear-gradient(to right, transparent, #000 45%);
+    display: block; position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover;
+    filter: saturate(0.8) contrast(1.05);
   }
-  .hero:has(.hero-media) .wrap { position: relative; }
+  /* full-bleed footage under a scrim: solid behind the text, opening up to the right, fading out at the bottom */
+  .hero:has(.hero-media)::after {
+    content: ""; position: absolute; inset: 0; pointer-events: none;
+    background:
+      linear-gradient(to top, #0b0b0b, transparent 30%),
+      linear-gradient(to right, rgba(11, 11, 11, 0.95) 25%, rgba(11, 11, 11, 0.7) 50%, rgba(11, 11, 11, 0.35));
+  }
+  .hero:has(.hero-media) .wrap { position: relative; z-index: 1; }
   .hero:has(.hero-media) .hero-logo { display: none; }  /* already in the nav */
   .hero:has(.hero-media) h1 { text-shadow: 0 2px 24px rgba(0, 0, 0, 0.5); }
   .hero:has(.hero-media) .lead { margin-inline: 0; max-width: 32rem; }
