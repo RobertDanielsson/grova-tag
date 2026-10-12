@@ -9,6 +9,14 @@
 <meta name="theme-color" content="#0b0b0b" media="(prefers-color-scheme: dark)">
 <link rel="icon" href="bilder/favicon.png">
 <link rel="stylesheet" href="styles.css">
+<link rel="canonical" href="https://grovatag.se/kontakt.html">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://grovatag.se/kontakt.html">
+<meta property="og:title" content="Kontakt – Grova Tag">
+<meta property="og:description" content="Kontakta Grova Tag i Östersund för en kostnadsfri offert på rivning, håltagning, bygg, renovering och betongjobb.">
+<meta property="og:image" content="https://grovatag.se/bilder/delning.png">
+<meta property="og:locale" content="sv_SE">
+<meta name="twitter:card" content="summary_large_image">
 </head>
 <body>
 <script>document.body.classList.add('js')</script>
@@ -18,7 +26,6 @@
     <a class="logo" href="index.html"><picture><source srcset="bilder/mark-dark.png" media="(prefers-color-scheme: dark)"><img src="bilder/mark.png" alt="Grova Tag" width="341" height="90"></picture></a>
     <ul>
       <li class="wide"><a href="index.html#tjanster">Tjänster</a></li>
-      <li><a href="index.html#galleri">Galleri</a></li>
       <li><a href="nyheter.html">Nyheter</a></li>
       <li><a class="btn" href="kontakt.html" aria-current="page">Kontakt</a></li>
     </ul>
@@ -36,14 +43,16 @@
 
   <section>
     <div class="wrap contact-grid">
-      <!-- TODO: byt till riktigt nummer och mejl (även data-to på formuläret) -->
       <div class="contact-info reveal">
-        <a href="tel:+46700000000"><small>Ring</small><b>070-000 00 00</b></a>
-        <a href="mailto:info@grovatag.se"><small>Mejla</small><b>info@grovatag.se</b></a>
+        <a href="tel:+46791044493"><small>Ring</small><b>079-104 44 93</b></a>
+        <a href="mailto:grovatag@hotmail.com"><small>Mejla</small><b>grovatag@hotmail.com</b></a>
         <div><small>Område</small><b>Östersund &amp; hela Jämtland</b></div>
       </div>
 
-      <form id="offert" class="reveal" data-to="info@grovatag.se">
+      <form id="offert" class="reveal" data-to="grovatag@hotmail.com">
+        <!-- TODO: byt till nyckeln från web3forms.com (skickas till grovatag@hotmail.com). Tills dess öppnar formuläret mejlappen. -->
+        <input type="hidden" name="access_key" value="WEB3FORMS-NYCKEL">
+        <input type="checkbox" name="botcheck" style="display:none" tabindex="-1" autocomplete="off">
         <div class="form-row">
           <label>Namn<input name="namn" autocomplete="name" required></label>
           <label>Telefon<input name="telefon" type="tel" autocomplete="tel" required></label>
@@ -63,7 +72,7 @@
         </div>
         <label>Beskriv jobbet<textarea name="meddelande" required placeholder="Vad ska göras, ungefärlig storlek, när det behöver vara klart…"></textarea></label>
         <button class="btn" type="submit">Skicka förfrågan</button>
-        <p class="note">Formuläret öppnar din mejlapp med meddelandet ifyllt.</p>
+        <p class="note" role="status">Brådskande? Ring 079-104 44 93.</p>
       </form>
     </div>
   </section>
@@ -72,7 +81,7 @@
 <footer>
   <div class="wrap">
     <span>© <span id="year">2026</span> Grova Tag</span>
-    <span>Östersund, Jämtland</span>
+    <span>Östersund, Jämtland · Org.nr XXXXXX-XXXX</span><!-- TODO: riktigt org.nr, lägg till " · Godkänd för F-skatt" om det stämmer -->
   </div>
 </footer>
 
