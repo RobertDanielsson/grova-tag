@@ -50,7 +50,7 @@ form?.addEventListener('submit', async (e) => {
     status.textContent = 'Tack! Vi har fått din förfrågan och hör av oss snart.';
   } catch {
     status.textContent = `Det gick inte att skicka härifrån. Ring 079-104 44 93 eller mejla ${form.dataset.to}.`;
-    const body = `Namn: ${d.get('namn')}\nTelefon: ${d.get('telefon')}\nOrt: ${d.get('ort')}\nTyp av jobb: ${d.get('jobb')}\n\n${d.get('meddelande')}`;
+    const body = `Namn: ${d.get('namn')}\nTelefon: ${d.get('telefon')}\nE-post: ${d.get('email')}\nOrt: ${d.get('ort')}\nTyp av jobb: ${d.get('jobb')}\n\n${d.get('meddelande')}`;
     location.href = `mailto:${form.dataset.to}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
   } finally {
     btn.disabled = false;
