@@ -113,10 +113,6 @@ section { padding-block: clamp(4.5rem, 10vw, 8rem); }
 .card {
   background: var(--surface); border-radius: var(--radius); padding: 2rem;
   display: flex; flex-direction: column; gap: 0.75rem;
-  transition: transform 400ms var(--ease), box-shadow 400ms var(--ease);
-}
-@media (hover: hover) {
-  .card:hover { transform: translateY(-4px); box-shadow: 0 1.25rem 2.5rem -1rem rgba(0, 0, 0, 0.18); }
 }
 .card .num { font-size: 0.8125rem; font-weight: 800; font-style: italic; color: var(--accent-ink); letter-spacing: 0.04em; }
 .card p { color: var(--muted); }
@@ -169,6 +165,8 @@ section { padding-block: clamp(4.5rem, 10vw, 8rem); }
 .lightbox img { display: block; max-width: 100%; max-height: 90vh; border-radius: 1rem; }
 
 .about { background: var(--surface); }
+.about .lead, .about p + p { margin-top: 1rem; }
+.about p + p { color: var(--muted); }
 .about .wrap { display: grid; gap: 3rem; grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr)); align-items: center; }
 .facts { display: grid; grid-template-columns: 1fr 1fr; gap: 2rem 1.5rem; }
 .facts strong { display: block; font-size: clamp(2rem, 4vw, 2.75rem); letter-spacing: -0.03em; line-height: 1.1; }
@@ -192,6 +190,8 @@ section { padding-block: clamp(4.5rem, 10vw, 8rem); }
 .contact-info a { transition: transform 100ms ease-out; }
 .contact-info a:active { transform: scale(0.98); }
 .contact-info small { display: block; color: var(--muted); font-size: 0.8125rem; margin-bottom: 0.25rem; }
+.contact-info a b { color: var(--accent-ink); }
+.contact-info a b::after { content: " ›"; content: " ›" / ""; }  /* second line hides the arrow from screen readers where supported */
 .contact-info b { font-size: 1.125rem; font-weight: 600; letter-spacing: -0.01em; }
 
 form { background: var(--surface); border-radius: var(--radius); padding: 2rem; display: grid; gap: 1.1rem; }
@@ -208,6 +208,7 @@ input:focus, select:focus, textarea:focus { outline: none; border-color: var(--a
 form .note { color: var(--muted); font-size: 0.8125rem; }
 
 footer { border-top: 2px solid var(--accent); padding-block: 2rem; color: var(--muted); font-size: 0.8125rem; }
+footer a { text-decoration: underline; text-underline-offset: 0.2em; }
 footer .wrap { display: flex; justify-content: space-between; flex-wrap: wrap; gap: 0.5rem; }
 
 /* Gentle reveal on scroll; only applied when JS is running */
@@ -217,8 +218,8 @@ footer .wrap { display: flex; justify-content: space-between; flex-wrap: wrap; g
 @media (prefers-reduced-motion: reduce) {
   html { scroll-behavior: auto; }
   .js .reveal { transform: none; transition: opacity 300ms ease; }
-  .card, .btn, .contact-info a, .filters button, .gallery img { transition: none; }
-  .card:hover, .gallery figure:hover img { transform: none; }
+  .btn, .contact-info a, .filters button, .gallery img { transition: none; }
+  .gallery figure:hover img { transform: none; }
   .gallery figure, .lightbox[open] { animation: none; }
 }
 @media (prefers-reduced-transparency: reduce) {

@@ -32,7 +32,15 @@
   "email": "grovatag@hotmail.com",
   "description": "Rivning, håltagning, bygg, renovering och betongjobb i Östersund och hela Jämtland.",
   "address": { "@type": "PostalAddress", "addressLocality": "Östersund", "addressRegion": "Jämtlands län", "addressCountry": "SE" },
-  "areaServed": [{ "@type": "City", "name": "Östersund" }, { "@type": "AdministrativeArea", "name": "Jämtlands län" }]
+  "areaServed": [{ "@type": "City", "name": "Östersund" }, { "@type": "AdministrativeArea", "name": "Jämtlands län" }],
+  "founder": { "@type": "Person", "name": "Sebastian" },
+  "makesOffer": [
+    { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Rivning", "description": "Invändig och utvändig rivning, från en vägg till hela rum." } },
+    { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Håltagning", "description": "Kärnborrning och sågning i betong och murverk." } },
+    { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Bygg", "description": "Tillbyggnader, altaner, förråd och stommar." } },
+    { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Renovering", "description": "Kök, badrum och hela bostäder." } },
+    { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Betongjobb", "description": "Gjutning av plattor, grunder, trappor och golv." } }
+  ]
 }
 </script>
 </head>
@@ -41,9 +49,9 @@
 
 <nav>
   <div class="wrap">
-    <a class="logo" href="index.html"><picture><source srcset="bilder/mark-dark.png" media="(prefers-color-scheme: dark)"><img src="bilder/mark.png" alt="Grova Tag" width="341" height="90"></picture></a>
+    <a class="logo" href="./"><picture><source srcset="bilder/mark-dark.png" media="(prefers-color-scheme: dark)"><img src="bilder/mark.png" alt="Grova Tag" width="341" height="90"></picture></a>
     <ul>
-      <li class="wide"><a href="index.html#tjanster">Tjänster</a></li>
+      <li class="wide"><a href="./#tjanster">Tjänster</a></li>
       <li><a href="nyheter.html">Nyheter</a></li>
       <li><a class="btn" href="kontakt.html">Kontakt</a></li>
     </ul>
@@ -63,7 +71,7 @@
       <p class="lead">Rivning, håltagning, bygg, renovering och betongarbeten. Vi tar de grova tagen så att du slipper.</p>
       <div class="actions">
         <a class="btn" href="kontakt.html">Begär offert</a>
-        <a class="btn ghost" href="#tjanster">Våra tjänster ›</a>
+        <a class="btn ghost" href="tel:+46791044493">Ring 079-104 44 93 ›</a>
       </div>
     </div>
   </section>
@@ -72,7 +80,7 @@
     <div class="wrap">
       <div class="head reveal">
         <p class="eyebrow">Tjänster</p>
-        <h2>Det här gör vi.</h2>
+        <h2>Bygg, rivning och håltagning i Östersund.</h2>
       </div>
       <div class="grid">
         <article class="card reveal">
@@ -154,9 +162,9 @@
       <div class="reveal">
         <p class="eyebrow">Om Grova Tag</p>
         <h2>Hantverkare från Östersund.</h2>
-        <p class="lead" style="margin-top:1rem">Tjena! Sebastian här. Jag driver Grova Tag och hjälper både privatpersoner och företag med allt från bygg och renovering till rivning och småfix, i Östersund med omnejd.</p>
-        <p style="margin-top:1rem">Jag gillar att arbeta praktiskt, lösa problem och ta mig an nya utmaningar. För mig är det viktigt att vara flexibel, ha en bra dialog med kunden och se till att jobbet blir ordentligt gjort.</p>
-        <p style="margin-top:1rem">När jag inte jobbar lägger jag mycket tid på familjen och musiken. Jag spelar och sjunger i bandet Chasin' Jack.</p>
+        <p class="lead">Tjena! Sebastian här. Jag driver Grova Tag och hjälper både privatpersoner och företag med allt från bygg och renovering till rivning och småfix, i Östersund med omnejd.</p>
+        <p>Jag gillar att arbeta praktiskt, lösa problem och ta mig an nya utmaningar. För mig är det viktigt att vara flexibel, ha en bra dialog med kunden och se till att jobbet blir ordentligt gjort.</p>
+        <p>När jag inte jobbar lägger jag mycket tid på familjen och musiken. Jag spelar och sjunger i bandet Chasin' Jack.</p>
       </div>
       <div class="facts reveal">
         <div><strong>Östersund</strong><span>Bas för alla uppdrag</span></div>
@@ -172,7 +180,10 @@
       <p class="eyebrow">Kontakt</p>
       <h2>Berätta om ditt jobb.</h2>
       <p class="lead">Hör av dig så återkommer vi med en kostnadsfri offert.</p>
-      <a class="btn" href="kontakt.html">Kontakta oss</a>
+      <div class="actions">
+        <a class="btn" href="kontakt.html">Kontakta oss</a>
+        <a class="btn ghost" href="tel:+46791044493">Ring 079-104 44 93 ›</a>
+      </div>
     </div>
   </section>
 </main>
@@ -182,7 +193,7 @@
 <footer>
   <div class="wrap">
     <span>© <span id="year">2026</span> Grova Tag</span>
-    <span>Östersund, Jämtland · Godkänd för F-skatt</span>
+    <span><a href="tel:+46791044493">079-104 44 93</a> · Östersund, Jämtland · Godkänd för F-skatt</span>
   </div>
 </footer>
 
