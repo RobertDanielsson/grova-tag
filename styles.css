@@ -225,3 +225,17 @@ footer .wrap { display: flex; justify-content: space-between; flex-wrap: wrap; g
 @media (prefers-reduced-transparency: reduce) {
   nav { background: var(--bg); backdrop-filter: none; -webkit-backdrop-filter: none; }
 }
+
+/* Service pages */
+.actions.start { justify-content: flex-start; margin-top: 2rem; }
+.card .more { margin-top: auto; padding-top: 0.5rem; color: var(--accent-ink); font-weight: 600; font-size: 0.9375rem; }
+.prose { max-width: 46rem; background: var(--surface); border-radius: var(--radius); padding: 2rem; }
+.prose h2 { font-size: 1.625rem; letter-spacing: -0.02em; margin: 2rem 0 0.75rem; }
+.prose h2:first-child { margin-top: 0; }
+.prose p, .prose li { color: var(--muted); }
+.prose ul, .prose ol { padding-left: 1.25rem; display: grid; gap: 0.4rem; }
+.prose p + p, .prose ol + p { margin-top: 1rem; }
+.prose a, .page-head .eyebrow a { text-decoration: underline; text-underline-offset: 0.2em; }
+.more-services { display: flex; flex-wrap: wrap; align-items: center; gap: 0.5rem 1.25rem; margin-top: 2.5rem; }
+.more-services .eyebrow { width: 100%; }
+.more-services a { color: var(--accent-ink); font-weight: 600; }
